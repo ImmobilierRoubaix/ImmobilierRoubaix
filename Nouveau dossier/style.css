@@ -1,0 +1,20 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #D3B073;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+footer{
+  width: 600px;
+  margin: 0 auto;
+  background-color: #5B8389;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+
+}
+#conteneur
+{
+    display: flex;
+    justify-content: space-between;
+}
