@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Maison 1</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+	        <link rel="stylesheet" href="carousel.css">
     </head>
 
     <body>
@@ -28,9 +29,16 @@
     <section>
             <aside>
                 <h2>Maison 1</h2>
-                <img src="image/maison1.jpg"
-                width="300"
-                height="300">
+               <div class="slide-container">
+                <div class="mySlides">
+                 <img src="image/maison1.jpg" width="100%">
+                </div>
+                <div class="mySlides">
+                    <img src="image/maison1_1.jpg" style="width:100%">
+                  </div>
+                <a class="prev" onclick="Slides(-1)">&#10094;</a>
+                <a class="next" onclick="Slides(1)">&#10095;</a>
+                </div>
                 
                 
                 <p>Demander l'adresse à l'agence.</p>
@@ -50,7 +58,7 @@
         <footer>
             <p>Nous Contacter avec :flipagence@gmail.com </p>
         </footer>
-        
+        <script src="carousel javascript.js"></script>
     </body>
 </html>
 
