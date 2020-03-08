@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>Immeubles2</title>
 		<link href="style.css" rel="stylesheet" type="text/css">
+	        <link rel="stylesheet" href="carousel.css">
     </head>
 
     <body>
@@ -27,16 +28,23 @@
  
     <section>
             <aside>
-                <h2>Immeubles2</h2>
+               <h2>Immeubles2</h2>
+		<div class="slide-container">
+                <div class="mySlides">    
                 <img src="image/immeuble2.jpg"
-                width="300"
-                height="300">
+                style="width:100%">
+		</div>
+                <div class="mySlides"> 	
                 <img src="image/salon2.jpg"
-                width="300"
-                height="300">
+                style="width:100%">
+		</div>
+                <div class="mySlides">	
                 <img src="image/salon3.jpg"
-                width="300"
-                height="300">
+                style="width:100%">
+		 </div>
+            <a class="prev" onclick="Slides(-1)">&#10094;</a>
+            <a class="next" onclick="Slides(1)">&#10095;</a>
+            </div>
 
                 <p>Demander l'adresse à l'agence.</p>
                 <p>PRIX: 190 750 euros frais d'agence inclus à la charge du vendeur</p>
@@ -56,6 +64,6 @@
         <footer>
             <p>Nous Contacter avec :flipagence@gmail.com </p>
         </footer>
-        
+        <script src="carousel javascript.js"></script>
     </body>
 </html>
