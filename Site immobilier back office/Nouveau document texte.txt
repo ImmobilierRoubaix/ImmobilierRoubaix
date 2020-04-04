@@ -1,0 +1,2 @@
+Avant de mettre en place le site: -importer le document "immobilier.sql" dans mysql
+				  -Et mettre le dossier "nadir" dans le dosier "www" de Uwamp
