@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Terrain Nus2</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+<header>
+            <h1>Flip Immobilier</h1>
+        </header>
+        <div id="conteneur">
+            <nav>
+                <h2>Menus</h2>
+                <ul>
+                    <li><a href="page d'accueil.html">Accueil</a></li>
+                    <li><a href="page maison.html">Maison</a></li>
+                    <li><a href="appartement.html">Appartement</a></li>
+                    <li><a href="local.html">Locaux Commerciaux</a></li>
+                    <li><a href="Immeuble.html">Immeubles</a></li>
+                    <li><a href="terrain.html">Terrain Nus</a></li>
+                    <li><a href="contact2.html">Contact</a></li>
+                    <li><a href="http://localhost/nadir/site/connection.php">Administrateur</a></li>
+                </ul>
+            </nav>
+ 
+    <section><article id="content">
+            <aside>
+                <h2>Terrain Nus2 </h2>
+                <img src="image/terrain2.jpg"
+                width="300"
+                height="300">
+                
+                
+                <p>Demander l'adresse à l'agence.</p>
+                <p>PRIX:360 000 euros frais d'agence inclus à la charge du vendeur</p>
+                <p>Surface:905 m²</p>
+                <p> A VENDRE A ROUBAIX - AUTOUR DU CENTRE-VILLE - UN TERRAIN CONSTRUCTIBLE  DE 905 M² SUPERBE  ENVIRONNEMENT VERDOYANT</p>
+            </aside></article>
+            <button id="pdf" onclick="generatePDF()">Download as PDF</button>
+        </section>
+        
+</div>
+        
+        <footer>
+            <p>Nous Contacter avec :flipagence@gmail.com </p>
+        </footer>
+        
+    </body>
+</html>
+<script src="htmlToPdfFonctionnel/html2pdf.bundle.min.js"></script>
+<script>
+    function generatePDF() {
+      // Choose the element that our invoice is rendered in.
+      const element = document.getElementById("content");
+      // Choose the element and save the PDF for our user.
+      html2pdf()
+        .from(element)
+        .save();
+    }
+</script>

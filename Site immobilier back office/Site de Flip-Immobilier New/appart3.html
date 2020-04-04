@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Appartement 3</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+<header>
+            <h1>Flip Immobilier</h1>
+        </header>
+        <div id="conteneur">
+		
+ <nav>
+			<h2>Menus</h2>
+            <ul>
+                <li><a href="page d'accueil.html">Accueil</a></li>
+                <li><a href="page maison.html">Maison</a></li>
+                <li><a href="appartement.html">Appartement</a></li>
+                <li><a href="local.html">Locaux Commerciaux</a></li>
+                <li><a href="Immeuble.html">Immeubles</a></li>
+                <li><a href="terrain.html">Terrain Nus</a></li>
+                <li><a href="contact2.html">Contact</a></li>
+                <li><a href="http://localhost/nadir/site/connection.php">Administrateur</a></li>
+            </ul>
+        </nav>
+    
+    <section><article id="content">
+            <aside>
+               
+                <h1> Appartement 3</h1>
+                <img src="image/appart3.jpg"
+                width="300"
+                height="300">
+                <p> Demander l'adresse à l'agence.</p>
+                <p>  Description : agréable T1, idéalement situé (grandes ecoles),  Il dispose de 28 m² au sol et 23.2 m².La pièce principale est composée d'un coin salon, d'un coin cuisine et d'un lit en mezzanine.Le coin salon dispose d'un canapé convertible, d'une grande table basse pouvant se convertir en table standard et d'un dressing avec penderie et étagères contenant 4 chaises pliantes pratiques pour recevoir.Le coin cuisine dispose d'un évier, de plaques de cuisson, d'un réfrigérateur, d'un placard de rangement contenant le nécessaire de cuisine. Une tablette de bar permet de prendre des repas confortablement avec deux tabourets. Le meuble contient de la vaisselle, un grille pain et une balance.Un meuble à étagères permet d'avoir du rangement supplémentaire. Un micro ondes, une bouilloire et une machine à café sont également présents.On accède au lit par les quelques marches qui mènent à la mezzanine en bois de 5 m². </p>
+                <p>  Prix : 600 € (Charge Comprise) </p>
+            </aside>
+        </article>
+        <button id="pdf" onclick="generatePDF()">Download as PDF</button>
+        </section>
+</div>
+        
+        <footer>
+            <p>Nous Contacter avec :flipagence@gmail.com </p>
+        </footer>
+        
+    </body>
+</html>
+
+
+<script src="htmlToPdfFonctionnel/html2pdf.bundle.min.js"></script>
+<script>
+    function generatePDF() {
+      // Choose the element that our invoice is rendered in.
+      const element = document.getElementById("content");
+      // Choose the element and save the PDF for our user.
+      html2pdf()
+        .from(element)
+        .save();
+    }
+</script>
